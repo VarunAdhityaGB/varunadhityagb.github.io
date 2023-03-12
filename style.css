@@ -52,7 +52,7 @@ ul > li:last-child {
     float: right ;
 }
 
-ul > li:nth-child(2){
+/*ul > li:nth-child(2){
     float: none;
     position: absolute;
     font-size: x-large;
@@ -60,8 +60,19 @@ ul > li:nth-child(2){
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+}*/
 
 .active {
     background-color:cornflowerblue;
+}
+
+.circletag{
+    vertical-align: middle;
+    padding: 2%;
+    position: relative;
+    width: 360px;
+    height: 360px;
+    border-radius: 45%;
+    border: 1px solid aqua;
+    background-color: cornflowerblue;
 }
