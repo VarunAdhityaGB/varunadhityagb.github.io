@@ -1,26 +1,11 @@
 body {
-    background-color:black;
-}
-
-.user-btn {
-    width: 75px;
-    height: 75px;
-    border-radius: 50% ;
-    background-color: aqua;
-}
-
-#helloWorld {
-    width: 500px;
-    font-size:x-large;
-    padding-top: 20px;
-    padding-left: 2px;
-    color: chartreuse;
+	background: #0B334B;
 }
 
 ul {
     list-style-type: none;
     background-color:#333;
-    margin: 0;
+    margin: 10;
     overflow: hidden;
     padding: 0;
     position: sticky;
@@ -52,27 +37,41 @@ ul > li:last-child {
     float: right ;
 }
 
-/*ul > li:nth-child(2){
-    float: none;
-    position: absolute;
-    font-size: x-large;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
-
 .active {
     background-color:cornflowerblue;
 }
 
-.circletag{
-    vertical-align: middle;
-    padding: 2%;
-    position: relative;
-    width: 360px;
-    height: 360px;
-    border-radius: 45%;
-    border: 1px solid aqua;
-    background-color: cornflowerblue;
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	
 }
